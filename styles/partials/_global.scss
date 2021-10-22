@@ -1,0 +1,9 @@
+@use "./fonts" as *;
+@use "./variables" as *;
+
+@mixin body-styling {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-face: "Hurmit Mono";
+}

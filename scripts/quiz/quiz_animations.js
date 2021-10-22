@@ -18,7 +18,6 @@ const appearOnScroll = new IntersectionObserver(function (
         return;
       }
     } else {
-      console.log(entry.target);
       entry.target.classList.toggle("appear");
       // appearOnScroll.unobserve(entry.target)
     }
@@ -26,12 +25,8 @@ const appearOnScroll = new IntersectionObserver(function (
 },
 appearOptions);
 
-//observer.observe(faders); //here we tell the IntObs to look at this element
 //You can't run .observe() on a list of elements so:
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
-});

@@ -11,8 +11,6 @@ html {
   justify-content: center;
 }
 
-.header__title {
-}
 
 .quiz {
   display: flex;
@@ -20,6 +18,14 @@ html {
   align-items: center;
   position: relative;
 }
+
+.test {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  
+}
+
 //ideally creates white gradient at top and bottom as you scroll but it doesn't exactly work right
 // body::after {
 //   content: '';

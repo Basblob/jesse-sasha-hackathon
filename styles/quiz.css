@@ -147,6 +147,12 @@ html {
   position: relative;
 }
 
+.test {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
 .quiz__question {
   display: flex;
   flex-direction: column;

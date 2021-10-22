@@ -4,14 +4,21 @@ quizEl = document.querySelector(".quiz");
 
 const buildQuizQuestions = () => {
   let quizQuestions = document.querySelectorAll(".quiz__question");
+  let questionNumber = 0;
+
   quizQuestions.forEach((question) => {
+    let questionNumberAsString = questionNumber + "";
+    question.classList.add(questionNumberAsString);
+    questionNumber++;
     let questionText = document.createElement("p");
     questionText.classList.add("question__text");
 
     let questionOptions = document.createElement("ul");
     questionOptions.classList.add("question-options");
     for (let i = 0; i < 4; i++) {
-      questionOptions.appendChild(document.createElement("li"));
+      let li = document.createElement("li");
+      li.classList.add(i + 1 + "");
+      questionOptions.appendChild(li);
     }
     question.appendChild(questionText);
     question.appendChild(questionOptions);
@@ -21,9 +28,9 @@ const buildQuizQuestions = () => {
 const selectQuestions = (questions) => {
   let selectedQuestions = [];
   let alreadyPicked = [];
-  while(alreadyPicked.length < 8){
+  while (alreadyPicked.length < 8) {
     let pick = Math.floor(Math.random() * questions.length);
-    if(!alreadyPicked.includes(pick)){
+    if (!alreadyPicked.includes(pick)) {
       alreadyPicked.push(pick);
       selectedQuestions.push(questions[pick]);
     }
@@ -42,27 +49,24 @@ const fillQuestions = (clues) => {
 };
 
 const fillQuestionsOnPage = (questions) => {
-  console.log('in on page')
-  let onPage = document.querySelectorAll('.quiz__question');
+  let onPage = document.querySelectorAll(".quiz__question");
   let count = 0;
-  let query = '';
-  onPage.forEach((block => {
-    let allAnswers = questions[count].altAnswers
-    let rightAnswer = questions[count].rightAnswer
-    allAnswers.push(rightAnswer)
-    query = questions[count].query
-    block.firstChild.innerHTML = query
+  let query = "";
+  onPage.forEach((block) => {
+    let allAnswers = questions[count].altAnswers;
+    let rightAnswer = questions[count].rightAnswer;
+    allAnswers.push(rightAnswer);
+    query = questions[count].query;
+    block.firstChild.innerHTML = query;
     let ul = block.lastChild;
     let indexUl = 0;
-    ul.childNodes.forEach(li => {
+    ul.childNodes.forEach((li) => {
       li.innerHTML = allAnswers[indexUl];
-      console.log(li)
       indexUl++;
-    })
-
+    });
     count++;
-  }))
-}
+  });
+};
 
 //variables do not need to be exported/imported
 //all actions done inside of the then()
@@ -117,19 +121,41 @@ const fillAltAnswers = (filledQuestions) => {
   filledQuestions[17].altAnswers = ["Sparrow", "Falcon", "Ostrich"];
   filledQuestions[18].altAnswers = ["Omuamua", "Borisov", "Encke"];
   filledQuestions[19].altAnswers = ["Phobos", "Saturn", "Deimos"];
-}
+};
 
 spaceTrivia
   .then((response) => {
-    //Create and fill with data the Question objects from api and manually added 
+    //Create and fill with data the Question objects from api and manually added
     const filledQuestions = fillQuestions(response.data.clues); //returns array of Question Objects with answers and questions
     fillAltAnswers(filledQuestions); //Fills in alt answers for each Question Object
-    // console.log(filledQuestions);
     //Builds question blocks in html
     buildQuizQuestions();
     // returns array of 8 questions randomly
     const selectedQuestions = selectQuestions(filledQuestions);
     fillQuestionsOnPage(selectedQuestions);
+
+    const options = document.querySelectorAll(".question-options");
+    options.forEach((opt) => {
+      items = opt.childNodes;
+      items.forEach((bullet) => {
+        bullet.addEventListener("click", (e) => {
+          console.log(e.target);
+          e.target.classList.toggle("selected");
+        });
+      });
+    });
+
+    const correctAnwser = 4;
+    const maxScore = 8;
+    let userScore = 0;
+    let answerList = [];
+    answerList.forEach((ans) => {
+      if (ans === 4) {
+        userScore++;
+      }
+    });
+
+    
 
   })
   .catch((error) => {

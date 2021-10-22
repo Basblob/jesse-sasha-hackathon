@@ -187,4 +187,8 @@ html {
 .from-right.appear,
 .from-left.appear {
   transform: translateX(0);
+}
+
+.selected {
+  background-color: rgba(255, 0, 0, 0.5);
 }/*# sourceMappingURL=quiz.css.map */

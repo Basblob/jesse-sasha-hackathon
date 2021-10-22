@@ -85,3 +85,7 @@ html {
 .from-left.appear {
   transform: translateX(0);
 }
+
+.selected {
+  background-color: rgba($color: red, $alpha: .5)  
+}

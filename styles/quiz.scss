@@ -53,14 +53,15 @@ html {
   display: flex;
   flex-direction: column;
   //TODO creating animations and scroll actions
-  background-color: black;
-  margin-top: 80px;
-  height: 200px;
-  width: 200px;
+  border: red 5px;
+  background-color: blue;
+  margin-top: 100px;
+  height: 300px;
+  width: 300px;
 }
 
 .fade-in {
-  opacity: 0;
+  opacity: .5;
   transition: opacity 350ms ease-in-out;
 }
 

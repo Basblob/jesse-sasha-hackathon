@@ -7,9 +7,6 @@
     <title>Challenge yourself!</title>
     <link rel="stylesheet" href="../styles/quiz.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../scripts/quiz/quiz_animations.js" defer></script>
-    <script src="../scripts/quiz/quiz_api.js" defer></script>
-    <script src="../scripts/quiz/quiz_html.js" defer></script>
   </head>
   <body>
     <a href="../index.html">Go to home page (temp)</a>
@@ -17,7 +14,15 @@
       <h1 class="header__title">I hope you're ready...</h1>
     </header>
     <article class="quiz">
-      <div class="quiz__question fade-in from-right">
+      <div class="quiz__question fade-in from-right"></div>
+      <div class="quiz__question fade-in from-left"></div>
+      <div class="quiz__question fade-in from-right"></div>
+      <div class="quiz__question fade-in from-left"></div>
+      <div class="quiz__question fade-in from-right"></div>
+      <div class="quiz__question fade-in from-left"></div>
+      <div class="quiz__question fade-in from-right"></div>
+      <div class="quiz__question fade-in from-left"></div>
+      <!-- <div class="quiz__question fade-in from-right">
         <p class="question__text"></p>
         <ul class="question__options">
           <li></li>
@@ -88,7 +93,10 @@
           <li></li>
           <li></li>
         </ul>
-      </div>
+      </div> -->
     </article>
+    <script src="../scripts/quiz/quiz_api.js"></script>
+    <script src="../scripts/quiz/quiz_html.js"></script>
+    <script src="../scripts/quiz/quiz_animations.js"></script>
   </body>
 </html>

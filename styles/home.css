@@ -132,4 +132,79 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  background-color: red;
+}
+
+.navigation {
+  display: flex;
+  background-image: url(../assets/images/top-nav.png);
+  background-repeat: no-repeat;
+  border: red solid 2px;
+  min-width: 100vw;
+  min-height: 138px;
+  z-index: 5;
+  position: absolute;
+}
+.navigation__logo {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/images/logo-small.png);
+  background-repeat: no-repeat;
+  border: silver solid 2px;
+  min-width: 98px;
+  min-height: 65px;
+  z-index: 7;
+}
+.navigation__trivia {
+  display: flex;
+  flex-direction: column;
+  font-family: "Saria";
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: white;
+}
+.navigation__link {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.hero {
+  background-image: url(../assets/images/star-galaxy-hero.png);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 2704px;
+  border: blue solid 2px;
+  z-index: -5;
+}
+
+.bottom-container {
+  background-image: url(../assets/images/star-planet-horizon.png);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 2502px;
+  border: yellow solid 2px;
+  z-index: -5;
+  margin-top: -600px;
+}
+.bottom-container__star {
+  background-image: url(../assets/images/star-button.png);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 1069px;
+  border: seagreen solid 2px;
+  background-position-x: center;
+  z-index: 10;
+}
+
+.info {
+  background-image: url(../assets/images/bottom-nav.png);
+  background-repeat: no-repeat;
+  border: orange solid 2px;
+  min-width: 100%;
+  min-height: 138px;
+  z-index: 5;
+  margin-top: -138px;
 }/*# sourceMappingURL=home.css.map */

@@ -55,7 +55,7 @@ spaceTrivia
     filledQuestions[3].altAnswers = ['Yuri Gagarin', 'Anna Kikina', 'Yelena Serova'];
     filledQuestions[4].altAnswers = ['Apollo Lunar Module', 'Gemini', 'Altair'];
     filledQuestions[5].altAnswers = ['Mars', 'Olympus Mons', 'The Shell Gas Station on 6th and Pine']
-    filledQuestions[6].altAnswers = []
+    filledQuestions[6].altAnswers = ['']
     // console.log(response.data.clues);
     buildQuizQuestions();
     generate8Questions(response.data.clues);

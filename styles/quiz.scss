@@ -53,7 +53,6 @@ html {
   display: flex;
   flex-direction: column;
   //TODO creating animations and scroll actions
-  border: red 5px;
   background-color: blue;
   margin-top: 100px;
   height: 300px;
@@ -61,7 +60,7 @@ html {
 }
 
 .fade-in {
-  opacity: .5;
+  opacity: 0;
   transition: opacity 350ms ease-in-out;
 }
 

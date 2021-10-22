@@ -1,5 +1,81 @@
 @use "./partials/global" as *;
 
-body {
+body,
+html {
   @include body-styling;
+}
+
+.header {
+  display: flex;
+  //TODO center the title. change property if we change flex-direction
+  justify-content: center;
+}
+
+.header__title {
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+//ideally creates white gradient at top and bottom as you scroll but it doesn't exactly work right
+// body::after {
+//   content: '';
+//   position: absolute;
+//   left: 0px;
+//   right: 0px;
+//   height: 25%;
+//   bottom: 0px;
+//   background: linear-gradient(180deg, rgba(139,167,32,0) 0%, rgba(255,255,255,1) 100%);
+//   pointer-events: none;
+// }
+
+// body::after {
+//   content: '';
+//   position: absolute;
+//   left: 0px;
+//   right: 0px;
+//   height: 25%;
+//   top: 0px;
+//   background: linear-gradient(180deg, rgba(139,167,32,0) 0%, rgba(255,255,255,1) 100%);
+//   pointer-events: none;
+// }
+
+.quiz__question {
+  display: flex;
+  flex-direction: column;
+  //TODO creating animations and scroll actions
+  background-color: black;
+  margin-top: 80px;
+  height: 200px;
+  width: 200px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right,
+.from-left {
+  transition: transform 400ms ease-in, opacity 250ms ease-in;
+}
+
+.from-right.appear,
+.from-left.appear {
+  transform: translateX(0);
 }

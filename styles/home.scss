@@ -1,0 +1,5 @@
+@use "./partials/global" as *;
+
+body {
+  @include body-styling;
+}

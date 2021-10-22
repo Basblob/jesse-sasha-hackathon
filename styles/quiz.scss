@@ -1,2 +1,5 @@
-@use "./partials/fonts" as *;
-@use "./partials/variables" as *;
+@use "./partials/global" as *;
+
+body {
+  @include body-styling;
+}

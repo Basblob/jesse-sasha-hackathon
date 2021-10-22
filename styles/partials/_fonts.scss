@@ -1,17 +1,163 @@
-$font-family: "Hurmit Mono";
-$font-url: "../../assets/fonts/hurmit-mono-";
+$font-family: "Saira";
+$font-url: "../../assets/fonts/";
 @font-face {
-  font-family: $font-family;
-  src: url($font-url + "light.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Saira";
+  src: url($font-url + "Saira-ExtraBold.woff2") format("woff2"),
+    url($font-url + "Saira-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: $font-family;
-  src: url($font-url + "medium.otf") format("opentype");
+  font-family: "Saira";
+  src: url($font-url + "Saira-ExtraLightItalic.woff2") format("woff2"),
+    url($font-url + "Saira-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Italic.woff2") format("woff2"),
+    url($font-url + "Saira-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-BlackItalic.woff2") format("woff2"),
+    url($font-url + "Saira-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-ExtraLight.woff2") format("woff2"),
+    url($font-url + "Saira-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Bold.woff2") format("woff2"),
+    url($font-url + "Saira-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-BoldItalic.woff2") format("woff2"),
+    url($font-url + "Saira-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-ExtraBoldItalic.woff2") format("woff2"),
+    url($font-url + "Saira-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Black.woff2") format("woff2"),
+    url($font-url + "Saira-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-ThinItalic.woff2") format("woff2"),
+    url($font-url + "Saira-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Light.woff2") format("woff2"),
+    url($font-url + "Saira-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Thin.woff2") format("woff2"),
+    url($font-url + "Saira-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-MediumItalic.woff2") format("woff2"),
+    url($font-url + "Saira-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-SemiBoldItalic.woff2") format("woff2"),
+    url($font-url + "Saira-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
+  font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: $font-family;
-  src: url($font-url + "bold.otf") format("opentype");
-  font-weight: 700;
+  font-family: "Saira";
+  src: url($font-url + "Saira-Medium.woff2") format("woff2"),
+    url($font-url + "Saira-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-SemiBold.woff2") format("woff2"),
+    url($font-url + "Saira-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-LightItalic.woff2") format("woff2"),
+    url($font-url + "Saira-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url($font-url + "Saira-Regular.woff2") format("woff2"),
+    url($font-url + "Saira-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

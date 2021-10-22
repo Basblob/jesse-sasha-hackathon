@@ -7,11 +7,11 @@ $font-url: "../../assets/fonts/hurmit-mono-";
 }
 @font-face {
   font-family: $font-family;
-  src: url($font-url + "bold.otf") format("opentype");
-  font-weight: 700;
+  src: url($font-url + "medium.otf") format("opentype");
+  font-weight: 600;
 }
 @font-face {
   font-family: $font-family;
-  src: url($font-url + "medium.otf") format("opentype");
-  font-weight: 600;
+  src: url($font-url + "bold.otf") format("opentype");
+  font-weight: 700;
 }

@@ -2,7 +2,9 @@
 
 body,
 html {
-  @include body-styling;
+  @include body-styling{
+    background-color: black;
+  }
 }
 
 .header {
@@ -11,6 +13,9 @@ html {
   justify-content: center;
 }
 
+.header__title {
+  color: white;
+}
 
 .quiz {
   display: flex;
@@ -53,15 +58,17 @@ html {
   display: flex;
   flex-direction: column;
   //TODO creating animations and scroll actions
-  background-color: blue;
-  margin-top: 100px;
+  background-color: lightcoral;
+  margin-top: 200px;
   height: 300px;
   width: 300px;
 }
 
+
+
 .fade-in {
   opacity: 0;
-  transition: opacity 350ms ease-in-out;
+  transition: opacity 550ms ease-in-out;
 }
 
 .fade-in.appear {
@@ -78,7 +85,7 @@ html {
 
 .from-right,
 .from-left {
-  transition: transform 400ms ease-in, opacity 250ms ease-in;
+  transition: transform 250ms ease-in, opacity 450ms ease-in;
 }
 
 .from-right.appear,

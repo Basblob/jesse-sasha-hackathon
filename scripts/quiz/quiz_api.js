@@ -147,7 +147,7 @@ spaceTrivia
 
     const correctAnwser = 4;
     const maxScore = 8;
-    let userScore = 0;
+    let rightAnswers = document.querySelectorAll('.selected');
     let answerList = [];
     answerList.forEach((ans) => {
       if (ans === 4) {

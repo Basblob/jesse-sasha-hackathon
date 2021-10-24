@@ -133,11 +133,16 @@ html {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 .header {
   display: flex;
   justify-content: center;
+}
+
+.header__title {
+  color: white;
 }
 
 .quiz {
@@ -156,15 +161,15 @@ html {
 .quiz__question {
   display: flex;
   flex-direction: column;
-  background-color: blue;
-  margin-top: 100px;
+  background-color: lightcoral;
+  margin-top: 200px;
   height: 300px;
   width: 300px;
 }
 
 .fade-in {
   opacity: 0;
-  transition: opacity 350ms ease-in-out;
+  transition: opacity 550ms ease-in-out;
 }
 
 .fade-in.appear {
@@ -181,7 +186,7 @@ html {
 
 .from-right,
 .from-left {
-  transition: transform 400ms ease-in, opacity 250ms ease-in;
+  transition: transform 250ms ease-in, opacity 450ms ease-in;
 }
 
 .from-right.appear,
